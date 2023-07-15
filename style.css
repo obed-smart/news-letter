@@ -1,0 +1,186 @@
+@font-face{
+font-family: myfont;
+src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+--primary-color: hsl(234, 29%, 20%);
+--secondary-color:;
+}
+body{
+    font-family: myfont;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+.card-1{
+    display: flex;
+    width:750px;
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    user-select: none;
+}
+.card-right h1{
+    font-size: 40px;
+}
+.card-right{
+    width: 60%;
+   margin-top: 30px;
+}
+.card-left{
+
+    width: 40%;
+}
+.card-left img{
+    width: 100%;
+}
+.list p{
+list-style: none;
+font-size: 17px;
+display: flex;
+margin-bottom:10px;
+text-align: left;
+}
+.list p::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    height: 18px;
+    background-image: url(./assets/images/icon-list.svg);
+    background-size: cover;
+    margin-right: 5px;
+    background-position: center;
+    top: 12px;
+    left: 80px;
+  }
+
+form{
+    font-family: myfont;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    outline: none;
+    margin-top: 20px;
+}
+label{
+    margin-bottom: 10px;
+}
+input{
+    padding:10px 12px ;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    /* border: 1px hsl(228, 5%, 56%); */
+}
+.btn{
+    padding:10px 12px ;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background:hsl(235, 18%, 26%);
+    font-size: 15px;
+    border: none;
+}
+.btn:hover{
+    background: linear-gradient(46deg, #FF5476, hsl(4, 100%, 67%)) ;
+    box-shadow: 0px  6px 20px hsl(4, 74%, 60%);
+}
+.hide{
+    display: none;
+}
+.card-2{
+    font-family: myfont;
+    background: #fff;
+width: 350px;
+padding: 40px;
+border-radius: 20px;
+}
+.card-2 h1{
+font-size: 40px;
+}
+.card-2 p{
+font-size: 12px;
+}
+.card-2 img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.card-2 button{
+    width: 100%;
+}
+@media  (max-width:768px) {
+  
+    .card-1 {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+      }
+      
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .card-right{
+        width: 100%;
+        padding: 30px;
+        min-height:inherit;
+    }
+    .card-right h1{
+        font-size: 30px;
+    }
+    .card-right p {
+        font-size: 15px;
+    }
+    .list p{
+font-size: 15px;
+    }
+    .card-left{
+        width: 100%;
+        border: 3px solid;
+    }
+    .card-left img{
+content: url(/assets/images/illustration-sign-up-mobile.svg);
+position: relative;
+    }
+    form{
+        width: 90%;
+    }
+
+    .card-2{
+        min-height: 100vh;
+        width: 100%;
+        border-radius: none;
+        
+    }
+    .card-thanks{
+        margin-top: 80px;
+    }
+    .card-2 h1{
+        font-size: 40px;
+        
+        }
+        .card-2 p{
+        font-size: 15px;
+        }
+
+        .card-2 img{
+            width: 70px;
+            margin-bottom: 20px;
+        }
+        .card-2 button{
+            width: 100%;
+            font-size: 15px;
+            padding: 15px 12px;
+            margin-top:50% ;
+        }
+    
+}
