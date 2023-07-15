@@ -1,6 +1,6 @@
 @font-face{
 font-family: myfont;
-src: url(/assets/fonts/Roboto-Regular.ttf);
+src: url(./assets/fonts/Roboto-Regular.ttf);
 }
 *{
     box-sizing: border-box;
@@ -148,7 +148,7 @@ font-size: 15px;
         border: 3px solid;
     }
     .card-left img{
-content: url(/assets/images/illustration-sign-up-mobile.svg);
+content: url(./assets/images/illustration-sign-up-mobile.svg);
 position: relative;
     }
     form{
